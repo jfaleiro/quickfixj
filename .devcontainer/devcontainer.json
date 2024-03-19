@@ -1,0 +1,18 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	"dockerFile": "../docker/dev.Dockerfile",
+	"remoteUser": "root",
+	"containerEnv": {
+		"SHELL": "/usr/bin/zsh"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+}
