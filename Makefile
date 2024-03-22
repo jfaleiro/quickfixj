@@ -16,7 +16,7 @@ prepare-ide:
 prepare-ide-fast:
 	./mvnw install -Dmaven.javadoc.skip=true -DskipTests -PskipBundlePlugin,minimal-fix-latest
 
-run-banzai:
+run-client:
 	./mvnw exec:java -pl org.quickfixj:quickfixj-examples-banzai -Dexec.mainClass="quickfix.examples.banzai.Banzai"
 
 run-executor:
